@@ -83,6 +83,7 @@ main{
     color: rgb(0, 0, 0);
     flex-direction: row;
     justify-content: space-between;
+    background-image: linear-gradient(to bottom, #b1d0e0, #c9daea, #dee5f1, #f0f2f8, #ffffff);
 }
 
 .textohero{
@@ -96,6 +97,7 @@ main{
 
 .imghero{
     margin: 20px;
+    animation: slide 2s infinite alternate-reverse;
     width: 100%;
     object-fit: cover;
 }
@@ -105,14 +107,33 @@ main{
     width: 100%;
 }
 
+@keyframes slide{
+    to{
+        transform: translateY(-50px);
+    }
+
+    from{
+        transform: translateY(50px);
+    }
+}
 
 .hero p{
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
     width: 30.5ch;
+    animation: typing 8s steps(36), blink .5s infinite step-end alternate;
     overflow: hidden;
 }
+
+@keyframes typing {
+    
+    from { width: 0}
+    }
+    
+    @keyframes blink {
+     50% { border-color: transparent}
+    }
 
 
 .hero__boton{
@@ -263,9 +284,52 @@ main{
     height: 100%;
 }
 
+.hoverimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.747);
+    color:white;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.hoverimg a{
+    display: flex;
+    justify-content: center;
+    background: gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px black solid;
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 0.75em;
+}
+
 
 .hoverimg i{
     margin-right: 5px;
+}
+
+.hoverimg a:hover{
+    color: #000000;
+    background: rgb(87, 87, 87);
+}
+
+.portafolio__trabajos:hover .hoverimg{
+    height: 100%;
+    cursor: pointer;
 }
 
 
@@ -275,6 +339,7 @@ main{
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
+    background-image: linear-gradient(to bottom, #b1d0e0, #c9daea, #dee5f1, #f0f2f8, #ffffff);
 }
 .contacto__form{
     background-color: #6998AB;
