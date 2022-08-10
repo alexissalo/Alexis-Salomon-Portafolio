@@ -19,7 +19,7 @@ body{
 h1{ font-size: 3.5em;}
 h2{ font-size: 2.7em;}
 h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
+p{ font-size: 1.25em; margin: 0;}
 ul{ list-style: none;}
 li{ font-size: 1.25em;}
 
@@ -29,24 +29,40 @@ main{
 
 .header{
     grid-area: header;
-    display: flex;
+}
+
+.navcolor{
     background-color: #1A374D;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px;
 }
 
-.header__nav{
-    margin: 20px;
+.navbar-brand img{
+    height: 75px;
+    width: 75px;
+    border-radius: 100px;
+    object-fit: cover;
 }
-.header__nav ul li{
-    list-style: none;
-    display: inline-block;
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.navbar-toggler{
+    border: 0px;
+}
+
+.navbar{
+    --bs-navbar-color: #ffa60000;
+}
+
+.navbar-toggler-icon:hover{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 165, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
 }
 
 
-.header__nav__links{
+.nav-link{
     text-decoration: none;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -56,23 +72,10 @@ main{
     text-transform: uppercase;
 
 }
-.header__nav__links:hover{
+.nav-link:hover{
     color: #FFA500;
-    border-bottom: #FFA500 2px solid;
 }
 
-.header__logo img{
-    height: 75px;
-    width: 75px;
-    border-radius: 100px;
-    object-fit: cover;
-}
-
-.header__logo{
-    display: flex;
-    margin: 15px;
-    align-items: center;
-}
 
 /* inicio */
 .hero{
@@ -153,6 +156,7 @@ main{
 
 .hero a:hover{
     background-color: rgb(155, 193, 204);
+    color: #000000;
 }
 
 
@@ -217,18 +221,18 @@ main{
 
 .conocimiento__container__formal{
     grid-area: cono;
-    border: #000000 solid 1px;
+    border: #000 solid 2px;
     display: inline-block;
 }
 
 .conocimiento__container__curso{
     grid-area: curso;
-    border: #000000 solid 1px;
+    border: #000 solid 2px;
 }
 
 .conocimiento__container__skills{
     grid-area: skills;
-    border: #000000 solid 1px;
+    border: #000 solid 2px;
     text-align: center;
 }
 
@@ -241,22 +245,31 @@ main{
 }
 
 .skills{
+    display: grid;
+    grid-template-columns: 0.35fr 2fr;
     width: 100%;
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
+
 .skills img{
+    display: inline-block;
     width: 70px;
     height: 70px;
+    margin: 0;
+    padding: 0;
 }
 
-.skills__barra{
-    background: #6998AB;
-    border-radius: 20px;
-    width: 100%;
-    height: 20px;
-    overflow: hidden;
+.progress{
+    height: 1.7rem;
+    border-radius: 0.75rem;
+}
+
+.progress-bar{
+    background-color: #038bbb;
+}
+
+.progress-bar-striped{
+    background-image: linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);;
 }
 
 
@@ -346,12 +359,8 @@ main{
     margin: 10px 0 50px 0;
     display: inline-block;
     border-radius: 20px;
-    border-color: black;
-    border-style: solid;
-
+    border: 2px #000000 solid;
 }
-
-
 
 .contacto__form input{
     margin: 10px;
@@ -379,12 +388,12 @@ main{
     resize: none;
     color: black;
     background-color: white;
+    font-family: 'Montserrat';
 }
 
 
 .contacto__form input[type=submit],input[type=reset]{
     background-color: white;
-    font-family: monospace;
     width: 95%;
     margin: 10px;
     border-style: none;
