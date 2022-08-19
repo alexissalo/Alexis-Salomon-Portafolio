@@ -18,23 +18,23 @@
     }
     
     
-    .gridcontainerconocimiento{
+    .conocimiento .gridcontainerconocimiento{
         grid-template-areas: "cono"
                              "curso"
                              "skills";
         grid-template-columns: 1fr;
     }
     
-    .gridcontainerportafolio{
+    .portafolio .gridcontainerportafolio{
         grid-template-columns: 1fr;
     }
     
-    .sobremi__container__grid{
+    .sobremi .sobremi__container__grid{
         grid-template-columns: 1fr;
     }
     
     .contacto h1{
-        font-size: 2.5em;
+        font-size: 3.0em;
     }
     
     }
@@ -55,32 +55,27 @@
         position: relative;
     }
     
-    .sobremi__container__grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    
     .conocimiento h1{
         font-size: 3.5em;
     }
     
     
-    .gridcontainerconocimiento{
+    .conocimiento .gridcontainerconocimiento{
         grid-template-areas: "cono"
                              "curso"
                              "skills";
         grid-template-columns: 1fr;
     }
     
-    .gridcontainerportafolio{
+    .portafolio .gridcontainerportafolio{
         grid-template-columns: 1fr;
     }
     
-    .sobremi__container__grid{
+    .sobremi .sobremi__container__grid{
         grid-template-columns: 1fr;
     }
     
     .contacto h1{
-        font-size: 3.5em;
+        font-size: 4.0em;
     }
     }

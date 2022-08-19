@@ -27,9 +27,7 @@ li {
 
 .gridlayout {
   display: grid;
-  grid-template-areas: "header"
- "main"
- "footer";
+  grid-template-areas: "header" "main" "footer";
   height: 100vh; }
 
 header {
@@ -170,8 +168,7 @@ footer {
   justify-content: center; }
   .conocimiento .gridcontainerconocimiento {
     display: grid;
-    grid-template-areas: "cono skills"
- "curso skills";
+    grid-template-areas: "cono skills" "curso skills";
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     width: 95%;
@@ -367,16 +364,14 @@ footer {
   .conocimiento h1 {
     font-size: 2.5em; }
   .conocimiento .gridcontainerconocimiento {
-    grid-template-areas: "cono"
- "curso"
- "skills";
+    grid-template-areas: "cono" "curso" "skills";
     grid-template-columns: 1fr; }
   .portafolio .gridcontainerportafolio {
     grid-template-columns: 1fr; }
   .sobremi .sobremi__container__grid {
     grid-template-columns: 1fr; }
   .contacto h1 {
-    font-size: 2.5em; } }
+    font-size: 3.0em; } }
 
 /* media query tablet */
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -391,13 +386,11 @@ footer {
   .conocimiento h1 {
     font-size: 3.5em; }
   .conocimiento .gridcontainerconocimiento {
-    grid-template-areas: "cono"
- "curso"
- "skills";
+    grid-template-areas: "cono" "curso" "skills";
     grid-template-columns: 1fr; }
   .portafolio .gridcontainerportafolio {
     grid-template-columns: 1fr; }
   .sobremi .sobremi__container__grid {
     grid-template-columns: 1fr; }
   .contacto h1 {
-    font-size: 3.5em; } }
+    font-size: 4.0em; } }
