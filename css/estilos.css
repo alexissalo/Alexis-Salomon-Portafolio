@@ -4,8 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Montserrat", "Roboto", Arial, sans-serif;
-  height: 100vh; }
+  font-family: "Montserrat", "Roboto", Arial, sans-serif; }
 
 h1 {
   font-size: 3.5em; }
@@ -28,7 +27,10 @@ li {
 
 .gridlayout {
   display: grid;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header"
+ "main"
+ "footer";
+  height: 100vh; }
 
 header {
   grid-area: header; }
@@ -76,19 +78,19 @@ footer {
 
 .hero {
   display: flex;
-  height: 580px;
-  align-items: center;
-  text-align: center;
-  color: black;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 580px;
+  text-align: center;
+  color: black;
   background-image: linear-gradient(to bottom, #b1d0e0, #c9daea, #dee5f1, #f0f2f8, #ffffff); }
   .hero .textohero {
     display: flex;
-    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 20px; }
     .hero .textohero p {
       display: block;
@@ -147,19 +149,16 @@ footer {
     width: 100%;
     margin: auto;
     grid-gap: 10px; }
-    .sobremi .sobremi__container__grid .sobremi__img {
+    .sobremi .sobremi__container__grid .sobremi__img, .sobremi .sobremi__container__grid .sobremi__info {
       height: 75%;
       width: 75%;
       box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25); }
-      .sobremi .sobremi__container__grid .sobremi__img img {
+      .sobremi .sobremi__container__grid .sobremi__img img, .sobremi .sobremi__container__grid .sobremi__info img {
         height: 100%;
         width: 100%; }
     .sobremi .sobremi__container__grid .sobremi__info {
-      height: 75%;
-      width: 75%;
       padding: 10px;
       text-align: center;
-      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
       overflow: auto; }
       .sobremi .sobremi__container__grid .sobremi__info p {
         margin-top: 10px; }
@@ -171,7 +170,8 @@ footer {
   justify-content: center; }
   .conocimiento .gridcontainerconocimiento {
     display: grid;
-    grid-template-areas: "cono skills" "curso skills";
+    grid-template-areas: "cono skills"
+ "curso skills";
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     width: 95%;
@@ -192,7 +192,8 @@ footer {
         margin: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
+        align-items: center;
         align-items: flex-start; }
         .conocimiento .gridcontainerconocimiento .conocimiento__container__skills .container__skills .skills {
           display: grid;
@@ -233,8 +234,8 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
         align-items: center;
+        text-align: center;
         position: absolute;
         bottom: 0;
         top: 50%;
@@ -272,7 +273,7 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: #000000;
   background-image: linear-gradient(to bottom, #b1d0e0, #c9daea, #dee5f1, #f0f2f8, #ffffff); }
   .contacto .contacto__form {
     background-color: #6998AB;
@@ -295,7 +296,6 @@ footer {
       background-color: white;
       width: 95%;
       margin: 10px;
-      border-style: none;
       cursor: pointer;
       justify-content: center;
       border: #000 1px solid;
@@ -366,12 +366,14 @@ footer {
     position: relative; }
   .conocimiento h1 {
     font-size: 2.5em; }
-  .gridcontainerconocimiento {
-    grid-template-areas: "cono" "curso" "skills";
+  .conocimiento .gridcontainerconocimiento {
+    grid-template-areas: "cono"
+ "curso"
+ "skills";
     grid-template-columns: 1fr; }
-  .gridcontainerportafolio {
+  .portafolio .gridcontainerportafolio {
     grid-template-columns: 1fr; }
-  .sobremi__container__grid {
+  .sobremi .sobremi__container__grid {
     grid-template-columns: 1fr; }
   .contacto h1 {
     font-size: 2.5em; } }
@@ -386,17 +388,16 @@ footer {
       font-size: 1.5em; }
   .imghero {
     position: relative; }
-  .sobremi__container__grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; }
   .conocimiento h1 {
     font-size: 3.5em; }
-  .gridcontainerconocimiento {
-    grid-template-areas: "cono" "curso" "skills";
+  .conocimiento .gridcontainerconocimiento {
+    grid-template-areas: "cono"
+ "curso"
+ "skills";
     grid-template-columns: 1fr; }
-  .gridcontainerportafolio {
+  .portafolio .gridcontainerportafolio {
     grid-template-columns: 1fr; }
-  .sobremi__container__grid {
+  .sobremi .sobremi__container__grid {
     grid-template-columns: 1fr; }
   .contacto h1 {
     font-size: 3.5em; } }

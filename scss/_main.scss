@@ -1,20 +1,17 @@
 @import "variables.scss";
+@import "mixins.scss";
+@import "maps.scss";
+
 
 .hero{
-    display: flex;
+    @include flex-row-between;
     height: 580px;
-    align-items: center;
     text-align: center;
     color: rgb(0, 0, 0);
-    flex-direction: row;
-    justify-content: space-between;
     background-image: linear-gradient(to bottom, #b1d0e0, #c9daea, #dee5f1, #f0f2f8, #ffffff);
     .textohero{
-        display: flex;
+        @include flex-row-column;
         text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin: 20px;
         p{
             display: block;
@@ -96,11 +93,9 @@
         }
         
         .sobremi__info{
-            height: 75%;
-            width: 75%;
+            @extend .sobremi__img;
             padding: 10px;
             text-align: center;
-            box-shadow: $sombras;
             overflow: auto;
             p{
                 margin-top: 10px;
@@ -140,9 +135,7 @@
             text-align: center;
             .container__skills{
                 margin: 10px;
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
+                @include flex-row-column;
                 align-items: flex-start;
                 .skills{
                     display: grid;
@@ -191,11 +184,8 @@
                 height: 100%;
             }
             .hoverimg{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include flex-row-column;
                 text-align: center;
-                align-items: center;
                 position: absolute;
                 bottom: 0;
                 top: 50%;
@@ -240,10 +230,10 @@
 
 /* seccion de contacto */
 .contacto{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
+    text-align: map-get($estilos ,centro);
+    align-items: map-get($estilos ,centro);;
+    justify-content: map-get($estilos ,centro);;
+    color: map-get($estilos ,color);;
     background-image: linear-gradient(to bottom, #b1d0e0, #c9daea, #dee5f1, #f0f2f8, #ffffff);
     .contacto__form{
         background-color: #6998AB;
@@ -268,7 +258,6 @@
             background-color: white;
             width: 95%;
             margin: 10px;
-            border-style: none;
             cursor: pointer;
             justify-content: center;
             border: $borde-fino;
