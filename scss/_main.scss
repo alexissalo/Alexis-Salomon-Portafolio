@@ -5,8 +5,8 @@
 
 .hero{
     @include flex-row-between;
-    height: 580px;
     text-align: center;
+    height: 85vh;
     color: rgb(0, 0, 0);
     background-image: linear-gradient(to bottom, #b1d0e0, #c9daea, #dee5f1, #f0f2f8, #ffffff);
     .textohero{

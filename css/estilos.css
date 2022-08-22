@@ -79,8 +79,8 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 580px;
   text-align: center;
+  height: 85vh;
   color: black;
   background-image: linear-gradient(to bottom, #b1d0e0, #c9daea, #dee5f1, #f0f2f8, #ffffff); }
   .hero .textohero {
@@ -374,7 +374,7 @@ footer {
     font-size: 3.0em; } }
 
 /* media query tablet */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
   .textohero {
     font-size: 0.90em;
     position: absolute;
