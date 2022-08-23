@@ -1,0 +1,9 @@
+.Agruegue esta keywords: portafolio,alexis salomon,portafolio de alexis salomon,desarrollador web,diseño web,desarrollo web
+
+.Agregue esta description:
+
+-Pagina de inicio: pagina de inicio del portafolio web de alexis salomon
+-Pagina de Sobre Mi: pagina de sobre mi del portafolio web de alexis salomon
+-Pagina de Conocimiento: pagina de conocimiento del portafolio web de alexis salomon
+-Pagina de Portafolio: pagina de portafolio del portafolio web de alexis salomon
+-Pagina de Contacto: pagina de contacto del portafolio web de alexis salomon
