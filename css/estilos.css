@@ -369,7 +369,8 @@ footer {
   .portafolio .gridcontainerportafolio {
     grid-template-columns: 1fr; }
   .sobremi .sobremi__container__grid {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr; }
   .contacto h1 {
     font-size: 3.0em; } }
 
@@ -391,6 +392,7 @@ footer {
   .portafolio .gridcontainerportafolio {
     grid-template-columns: 1fr; }
   .sobremi .sobremi__container__grid {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr; }
   .contacto h1 {
     font-size: 4.0em; } }
