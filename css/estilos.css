@@ -72,7 +72,7 @@ footer {
   text-transform: uppercase; }
 
 .header .nav-link:hover {
-  color: #FFA500; }
+  color: #7ce3ff; }
 
 .hero {
   display: flex;
@@ -343,7 +343,7 @@ footer {
         margin: 10px;
         color: white; }
       .footer .footer__container .footer__redes .footer__redes__icon i:hover {
-        color: #FFA500; }
+        color: #7ce3ff; }
   .footer .footer__copy {
     display: flex;
     justify-content: space-between;
