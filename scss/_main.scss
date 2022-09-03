@@ -73,7 +73,6 @@
 
 .sobremi{
     text-align: center;
-    height: 65vh;
     .sobremi__container__grid{
         text-align: center;
         justify-items: center;
@@ -110,7 +109,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 65vh;
+    height: 75vh;
     .gridcontainerconocimiento{
         display: grid;
         grid-template-areas: "cono skills"
@@ -171,7 +170,7 @@
 
 .portafolio{
     text-align: center;
-    height: 65vh;
+    height: 75vh;
     .gridcontainerportafolio{
         display: grid;
         grid-template-columns: repeat(3, 1fr);

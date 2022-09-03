@@ -137,8 +137,7 @@ footer {
 
 /* seccion pag sobremi */
 .sobremi {
-  text-align: center;
-  height: 65vh; }
+  text-align: center; }
   .sobremi .sobremi__container__grid {
     text-align: center;
     justify-items: center;
@@ -167,7 +166,7 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 65vh; }
+  height: 75vh; }
   .conocimiento .gridcontainerconocimiento {
     display: grid;
     grid-template-areas: "cono skills" "curso skills";
@@ -216,7 +215,7 @@ footer {
 /* seccion de portafolio */
 .portafolio {
   text-align: center;
-  height: 65vh; }
+  height: 75vh; }
   .portafolio .gridcontainerportafolio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
