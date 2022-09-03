@@ -109,7 +109,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 75vh;
+    height: 70vh;
     .gridcontainerconocimiento{
         display: grid;
         grid-template-areas: "cono skills"
@@ -170,7 +170,7 @@
 
 .portafolio{
     text-align: center;
-    height: 75vh;
+    height: 70vh;
     .gridcontainerportafolio{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
