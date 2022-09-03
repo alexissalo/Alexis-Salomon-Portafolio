@@ -73,6 +73,7 @@
 
 .sobremi{
     text-align: center;
+    height: 85vh;
     .sobremi__container__grid{
         text-align: center;
         justify-items: center;
@@ -109,6 +110,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    height: 85vh;
     .gridcontainerconocimiento{
         display: grid;
         grid-template-areas: "cono skills"
@@ -169,6 +171,7 @@
 
 .portafolio{
     text-align: center;
+    height: 85vh;
     .gridcontainerportafolio{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -230,6 +233,7 @@
 
 /* seccion de contacto */
 .contacto{
+    height: 85vh;
     text-align: map-get($estilos ,centro);
     align-items: map-get($estilos ,centro);;
     justify-content: map-get($estilos ,centro);;
