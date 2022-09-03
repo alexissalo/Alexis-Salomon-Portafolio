@@ -139,6 +139,7 @@ footer {
 .sobremi {
   text-align: center; }
   .sobremi .sobremi__container__grid {
+    height: 85vh;
     text-align: center;
     justify-items: center;
     align-items: center;
@@ -167,6 +168,7 @@ footer {
   align-items: center;
   justify-content: center; }
   .conocimiento .gridcontainerconocimiento {
+    height: 85vh;
     display: grid;
     grid-template-areas: "cono skills" "curso skills";
     grid-template-rows: 1fr 1fr;
@@ -215,6 +217,7 @@ footer {
 .portafolio {
   text-align: center; }
   .portafolio .gridcontainerportafolio {
+    height: 85vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
@@ -267,6 +270,7 @@ footer {
 
 /* seccion de contacto */
 .contacto {
+  height: 85vh;
   text-align: center;
   align-items: center;
   justify-content: center;
