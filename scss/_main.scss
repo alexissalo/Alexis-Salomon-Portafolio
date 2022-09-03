@@ -109,7 +109,6 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 70vh;
     .gridcontainerconocimiento{
         display: grid;
         grid-template-areas: "cono skills"
@@ -170,7 +169,6 @@
 
 .portafolio{
     text-align: center;
-    height: 70vh;
     .gridcontainerportafolio{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -232,7 +230,6 @@
 
 /* seccion de contacto */
 .contacto{
-    height: 85vh;
     text-align: map-get($estilos ,centro);
     align-items: map-get($estilos ,centro);;
     justify-content: map-get($estilos ,centro);;
