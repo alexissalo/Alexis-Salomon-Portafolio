@@ -74,15 +74,25 @@ footer {
 .header .nav-link:hover {
   color: #7ce3ff; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+
 .hero {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
   height: 85vh;
-  color: black;
-  background-image: linear-gradient(to bottom, #b1d0e0, #c9daea, #dee5f1, #f0f2f8, #ffffff); }
+  color: white;
+  background: rgba(0, 0, 0, 0.7) url(../img/banner1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  animation: banner infinite 20s; }
   .hero .textohero {
     display: flex;
     flex-direction: column;
@@ -107,18 +117,15 @@ footer {
     border-color: transparent; } }
     .hero .textohero .hero__boton {
       text-decoration: none;
-      background-color: lightblue;
-      color: black;
-      border-color: black;
-      border-style: solid;
+      background-color: #038bbb;
+      color: white;
+      border: white 1px solid;
       border-radius: 20px;
       margin: 20px;
-      width: 100px;
       padding: 10px;
-      border-width: 1px;
       font-size: 1.25em; }
     .hero .textohero .hero__boton:hover {
-      background-color: #9bc1cc;
+      background-color: #0076a1;
       color: #000000; }
   .hero .imghero {
     margin: 20px;
@@ -137,92 +144,166 @@ footer {
 
 /* seccion pag sobremi */
 .sobremi {
-  text-align: center; }
+  text-align: center;
+  background-color: #ffffff;
+  padding: 60px 20px 60px 20px;
+  /* Hide the images by default */ }
+  .sobremi h1 {
+    margin: 20px;
+    margin-bottom: 50px; }
   .sobremi .sobremi__container__grid {
     text-align: center;
     justify-items: center;
     align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
     width: 100%;
     margin: auto;
-    grid-gap: 10px; }
-    .sobremi .sobremi__container__grid .sobremi__img, .sobremi .sobremi__container__grid .sobremi__info {
-      height: 75%;
-      width: 75%;
-      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25); }
-      .sobremi .sobremi__container__grid .sobremi__img img, .sobremi .sobremi__container__grid .sobremi__info img {
-        height: 100%;
-        width: 100%; }
+    padding: 20px;
+    background-color: #272626;
+    border-radius: 10px; }
+    .sobremi .sobremi__container__grid .sobremi__img {
+      background-color: #ffffff;
+      border-radius: 20px; }
+    .sobremi .sobremi__container__grid .sobremi__img img {
+      height: 300px;
+      width: 300px; }
     .sobremi .sobremi__container__grid .sobremi__info {
       padding: 10px;
       text-align: center;
-      overflow: auto; }
+      overflow: auto;
+      color: #ffffff; }
       .sobremi .sobremi__container__grid .sobremi__info p {
         margin-top: 10px; }
+  .sobremi .slideshow-container {
+    margin: auto; }
+  .sobremi .mySlides {
+    display: none; }
+  .sobremi .dots {
+    text-align: center;
+    margin: 20px; }
+  .sobremi .dot {
+    padding: auto;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin: 0 2px;
+    background-color: #038bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  .sobremi .dot i {
+    font-size: 25px; }
+  .sobremi .active, .sobremi .dot:hover {
+    background-color: #038bbb;
+    color: #ffffff; }
+  .sobremi .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    opacity: 1; }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+  .sobremi .conocimiento__container__skills {
+    grid-area: skills;
+    text-align: center;
+    background-color: #272626;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px; }
+    .sobremi .conocimiento__container__skills .container__skills {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-items: flex-start;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px; }
+      .sobremi .conocimiento__container__skills .container__skills .skills {
+        display: grid;
+        grid-template-columns: 0.35fr 2fr;
+        width: 100%;
+        align-items: center; }
+        .sobremi .conocimiento__container__skills .container__skills .skills img {
+          display: inline-block;
+          width: 70px;
+          height: 70px;
+          margin: 0;
+          padding: 0; }
+        .sobremi .conocimiento__container__skills .container__skills .skills .progress {
+          height: 1.7rem;
+          border-radius: 0.75rem; }
+          .sobremi .conocimiento__container__skills .container__skills .skills .progress .progress-bar {
+            background-color: #038bbb; }
+            .sobremi .conocimiento__container__skills .container__skills .skills .progress .progress-bar p {
+              text-align: end;
+              padding-right: 5px;
+              font-weight: 600; }
+          .sobremi .conocimiento__container__skills .container__skills .skills .progress .progress-bar-striped {
+            background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+  .sobremi .estudios__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #272626;
+    color: #ffffff;
+    border-radius: 10px;
+    line-height: 60px;
+    padding: 20px; }
+    .sobremi .estudios__container h3 {
+      text-decoration-line: underline;
+      text-decoration-color: #0076a1; }
+    .sobremi .estudios__container li {
+      list-style: disc;
+      color: #0076a1; }
+    .sobremi .estudios__container p {
+      color: #ffffff;
+      text-align: start; }
 
 /* seccion de conocimiento */
-.conocimiento {
+.servicios {
   text-align: center;
   align-items: center;
-  justify-content: center; }
-  .conocimiento .gridcontainerconocimiento {
+  justify-content: center;
+  background-color: #F5F5F5;
+  padding: 60px 20px 60px 20px; }
+  .servicios h1 {
+    margin-bottom: 50px; }
+  .servicios .gridcontainerservicios {
     display: grid;
-    grid-template-areas: "cono skills" "curso skills";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 95%;
     grid-gap: 20px;
     margin: 20px auto; }
-    .conocimiento .gridcontainerconocimiento .conocimiento__container__formal {
-      grid-area: cono;
-      border: #000 2px solid;
-      display: inline-block; }
-    .conocimiento .gridcontainerconocimiento .conocimiento__container__curso {
-      grid-area: curso;
-      border: #000 2px solid; }
-    .conocimiento .gridcontainerconocimiento .conocimiento__container__skills {
-      grid-area: skills;
-      border: #000 2px solid;
-      text-align: center; }
-      .conocimiento .gridcontainerconocimiento .conocimiento__container__skills .container__skills {
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-items: flex-start; }
-        .conocimiento .gridcontainerconocimiento .conocimiento__container__skills .container__skills .skills {
-          display: grid;
-          grid-template-columns: 0.35fr 2fr;
-          width: 100%;
-          align-items: center; }
-          .conocimiento .gridcontainerconocimiento .conocimiento__container__skills .container__skills .skills img {
-            display: inline-block;
-            width: 70px;
-            height: 70px;
-            margin: 0;
-            padding: 0; }
-          .conocimiento .gridcontainerconocimiento .conocimiento__container__skills .container__skills .skills .progress {
-            height: 1.7rem;
-            border-radius: 0.75rem; }
-            .conocimiento .gridcontainerconocimiento .conocimiento__container__skills .container__skills .skills .progress .progress-bar {
-              background-color: #038bbb; }
-            .conocimiento .gridcontainerconocimiento .conocimiento__container__skills .container__skills .skills .progress .progress-bar-striped {
-              background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+    .servicios .gridcontainerservicios .card__servicio {
+      background-color: #ffffff;
+      padding: 15px; }
+      .servicios .gridcontainerservicios .card__servicio i {
+        font-size: 50px; }
+    .servicios .gridcontainerservicios .card__servicio:hover {
+      background-color: #00a0c4;
+      color: #ffffff; }
 
 /* seccion de portafolio */
 .portafolio {
-  text-align: center; }
+  text-align: center;
+  background-color: #ffffff;
+  padding: 60px 20px 60px 20px; }
+  .portafolio h1 {
+    margin-bottom: 50px; }
   .portafolio .gridcontainerportafolio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    margin: 50px auto;
     grid-gap: 10px; }
     .portafolio .gridcontainerportafolio .portafolio__trabajos {
       cursor: pointer;
-      margin: 25px;
       position: relative; }
       .portafolio .gridcontainerportafolio .portafolio__trabajos img {
         width: 100%;
@@ -249,12 +330,12 @@ footer {
         .portafolio .gridcontainerportafolio .portafolio__trabajos .hoverimg a {
           display: flex;
           justify-content: center;
+          align-items: center;
           background: gray;
           color: white;
           text-decoration: none;
           border-radius: 50px;
           border: #000 1px solid;
-          width: 100px;
           margin: 10px;
           padding: 5px;
           font-size: 0.75em; }
@@ -270,27 +351,44 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: #000000;
-  background-image: linear-gradient(to bottom, #b1d0e0, #c9daea, #dee5f1, #f0f2f8, #ffffff); }
+  color: white;
+  background-color: #1a1a1a;
+  padding: 60px 20px 60px 20px; }
+  .contacto h1 {
+    margin-bottom: 50px; }
   .contacto .contacto__form {
-    background-color: #6998AB;
+    background-color: #383838;
     margin: 10px 0 50px 0;
-    display: inline-block;
     border-radius: 20px;
-    border: 2px #000000 solid; }
+    display: inline-block;
+    width: 50%; }
+    .contacto .contacto__form .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
     .contacto .contacto__form input {
-      margin: 10px;
-      border: #000 1px solid;
+      margin: 10px auto;
+      border: none;
+      border-bottom: 2px solid white;
       width: 95%;
       height: 50px;
       display: inline-block;
       padding: 10px;
-      color: black;
-      background-color: white; }
+      color: white;
+      background-color: #383838; }
+    .contacto .contacto__form input:hover {
+      border-bottom: 2px solid #00a0c4;
+      color: #00a0c4; }
+    .contacto .contacto__form textarea:hover {
+      border-bottom: 2px solid #00a0c4;
+      color: #00a0c4; }
     .contacto .contacto__form input::placeholder, .contacto .contacto__form textarea::placeholder {
-      color: black; }
+      color: white; }
+    .contacto .contacto__form textarea:focus, .contacto .contacto__form input:focus, .contacto .contacto__form input[type]:focus {
+      border-color: #00a0c4;
+      outline: 0 none; }
     .contacto .contacto__form input[type=submit], .contacto .contacto__form input[type=reset] {
-      background-color: white;
+      background-color: #46a2fd;
       width: 95%;
       margin: 10px;
       cursor: pointer;
@@ -300,7 +398,7 @@ footer {
       color: black;
       font-family: 'Montserrat'; }
     .contacto .contacto__form input[type=submit]:hover, .contacto .contacto__form input[type=reset]:hover {
-      background-color: lightblue; }
+      background-color: #3a9cff; }
     .contacto .contacto__form textarea {
       display: block;
       margin: 10px auto;
@@ -308,10 +406,11 @@ footer {
       height: 200px;
       font-family: sans-serif;
       padding: 10px;
-      border: #000 1px solid;
+      border: none;
+      border-bottom: 2px solid white;
       resize: none;
-      color: black;
-      background-color: white;
+      color: white;
+      background-color: #383838;
       font-family: 'Montserrat'; }
 
 .footer {
@@ -360,18 +459,24 @@ footer {
       font-size: 1em; }
   .imghero {
     position: relative; }
-  .conocimiento h1 {
+  .servicios h1 {
     font-size: 2.5em; }
-  .conocimiento .gridcontainerconocimiento {
-    grid-template-areas: "cono" "curso" "skills";
+  .servicios .gridcontainerservicios {
     grid-template-columns: 1fr; }
   .portafolio .gridcontainerportafolio {
     grid-template-columns: 1fr; }
   .sobremi .sobremi__container__grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr; }
+    flex-wrap: wrap;
+    justify-content: center; }
+  .sobremi .estudios__container {
+    text-align: center;
+    align-items: center; }
+  .sobremi .conocimiento__container__skills .container__skills {
+    grid-template-columns: 1fr; }
   .contacto h1 {
-    font-size: 3.0em; } }
+    font-size: 3.0em; }
+  .contacto .contacto__form {
+    width: 100%; } }
 
 /* media query tablet */
 @media screen and (min-width: 481px) and (max-width: 850px) {
@@ -383,15 +488,57 @@ footer {
       font-size: 1.5em; }
   .imghero {
     position: relative; }
-  .conocimiento h1 {
+  .servicios h1 {
     font-size: 3.5em; }
-  .conocimiento .gridcontainerconocimiento {
-    grid-template-areas: "cono" "curso" "skills";
-    grid-template-columns: 1fr; }
+  .servicios .gridcontainerservicios {
+    grid-template-columns: 1fr 1fr; }
   .portafolio .gridcontainerportafolio {
     grid-template-columns: 1fr; }
   .sobremi .sobremi__container__grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr; }
+    flex-wrap: wrap;
+    justify-content: center; }
+  .sobremi .estudios__container {
+    text-align: center;
+    align-items: center; }
+  .sobremi .conocimiento__container__skills .container__skills {
+    grid-template-columns: 1fr; }
   .contacto h1 {
-    font-size: 4.0em; } }
+    font-size: 4.0em; }
+  .contacto .contacto__form {
+    width: 90%; } }
+
+@media screen and (min-width: 1800px) {
+  h1 {
+    font-size: 4.5em; }
+  h2 {
+    font-size: 3.7em; }
+  h3 {
+    font-size: 3em; }
+  p {
+    font-size: 2.25em;
+    margin: 0; }
+  ul {
+    list-style: none; }
+  li {
+    font-size: 1.25em; }
+  .footer .footer__container .footer__redes .footer__redes__icon i {
+    font-size: 50px; }
+  .contacto .contacto__form input {
+    font-size: 1.5em; }
+  .contacto .contacto__form textarea {
+    font-size: 1.5em; }
+  .contacto .contacto__form input[type=submit], .contacto .contacto__form input[type=reset] {
+    padding: 0px; }
+  .portafolio .gridcontainerportafolio .portafolio__trabajos .hoverimg a {
+    font-size: 1em; }
+    .portafolio .gridcontainerportafolio .portafolio__trabajos .hoverimg a i {
+      font-size: 1.5em; }
+  .hero .textohero .hero__boton {
+    font-size: 2.5em; }
+  .sobremi .dot {
+    width: 80px;
+    height: 80px; }
+  .sobremi .dot i {
+    font-size: 50px; }
+  .header .nav-link {
+    font-size: 1.5em; } }

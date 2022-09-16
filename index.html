@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="gridlayout">
-        <header class="header">
+        <header class="header sticky" id="header">
             <nav class="navbar navbar-expand-lg navbar-light navcolor">
                 <div class="container-fluid">
                     <a class="navbar-brand me-auto" href="#"><img src="./img/logo.png" alt="logo"></a>
@@ -25,16 +25,16 @@
                     <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/sobremi.html">Sobre Mi</a>
+                                <a class="nav-link" href="#sobremi">Acerca de</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/conocimiento.html">Conocimiento</a>
+                                <a class="nav-link" href="#servicios">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/portafolio.html">Portafolio</a>
+                                <a class="nav-link" href="#portafolio">Portafolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                                <a class="nav-link" href="#contacto">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -42,16 +42,211 @@
             </nav>
         </header>
         <main>
-        <section class="hero">
-            <div class="textohero">
-                <h1 class="hero__titulo">Bienvenido A Mi Portafolio Web!</h1>
-                <p class="hero__parrafo">Soy Alexis Salomon Desarrollador Web</p>
-                <a class="hero__boton" href="https://drive.google.com/file/d/10gGe3MbLWXmq1dndnUSNTIHOKVQBgXHs/view?usp=sharing" target="_blank">Mi CV</a>
-            </div>
-            <div class="imghero">
-                <img src="./img/compuhero.png" srcset="./img/compuhero360w.png 360w, ./img/compuhero.png 640w, ./img/compuhero980w.png 980w" sizes="(max-width: 480px) 360px, (max-width: 1200px) 640px, 980px" alt="imagen de notebook en el inicio">
-            </div>
-        </section>
+            <section class="hero" id="hero">
+                <div class="textohero">
+                    <h1 class="hero__titulo">Bienvenido A Mi Portafolio Web!</h1>
+                    <p class="hero__parrafo">Soy Alexis Salomon Desarrollador Web</p>
+                    <a class="hero__boton" href="https://drive.google.com/file/d/10gGe3MbLWXmq1dndnUSNTIHOKVQBgXHs/view?usp=sharing" target="_blank">Mi CV</a>
+                </div>
+                <!-- <div class="imghero">
+                    <img src="./img/compuhero.png" srcset="./img/compuhero360w.png 360w, ./img/compuhero.png 640w, ./img/compuhero980w.png 980w" sizes="(max-width: 480px) 360px, (max-width: 1200px) 640px, 980px" alt="imagen de notebook en el inicio">
+                </div> -->
+            </section>
+            <section class="sobremi" id="sobremi">
+                <h1>Acerca de</h1>
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="sobremi__container__grid">
+                            <div class="sobremi__img">
+                                <img src="../img/myAvatar.png" srcset="../img/myAvatar480w.png 300w, ../img/myAvatar.png 500w, ../img/myAvatar1200w.png 700w" sizes="(max-width: 480px) 300px, (max-width: 1200px) 500px, 700px" alt="perfil">
+                            </div>
+                            <div class="sobremi__info">
+                                <h2>ALEXIS SALOMON</h2>
+                                <p>Hola, soy Alexis Salomón tengo 18 años y me gustaria dedicarme al desarrollo web actualmente estudio licenciatura en sistemas de información y me encuentro cursando desarrollo web en CODERHOUSE, soy una persona que busca siempre informarse y estudiar nuevas tecnologías referidas con el mundo tech</p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                        <div class="conocimiento__container__skills">
+                            <h3>Habilidades Técnicas:</h3>
+                            <div class="container__skills">
+                                <div class="skills">
+                                    <img src="../img/html.png" alt="html">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"><p>100%</p></div>
+                                    </div>
+                                </div>
+                                <div class="skills">
+                                    <img src="../img/css.png" alt="css">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><p>80%</p></div>
+                                    </div>
+                                </div>
+                                <div class="skills">
+                                    <img src="../img/sass.png" alt="sass">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"><p>50%</p></div>
+                                    </div>
+                                </div>
+                                <div class="skills">
+                                    <img src="../img/bootstrap.png" alt="bootstrap">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"><p>75%</p></div>
+                                    </div>
+                                </div>
+                                <div class="skills">
+                                    <img src="../img/git.png" alt="git">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"><p>30%</p></div>
+                                    </div>    
+                                </div>
+                                <div class="skills">
+                                    <img src="../img/python.png" alt="python">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"><p>50%</p></div>
+                                    </div>    
+                                </div>
+                                <div class="skills">
+                                    <img src="./img/javascript.png" alt="javascript">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"><p>25%</p></div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                        <div class="estudios__container">
+                            <h3>Mis Estudios</h3>
+                            <ul>
+                                <li><p>Estudiando Licenciatura en sistemas de informacion</p></li>
+                                <li><p>Curso Desarrollo Web</p></li>
+                                <li><p>Curso Javascript</p></li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"><i class="bi bi-person-circle" title="Sobre mi"></i></span>
+                    <span class="dot" onclick="currentSlide(2)"><i class="bi bi-lightbulb"></i></span>
+                    <span class="dot" onclick="currentSlide(3)"><i class="bi bi-mortarboard-fill"></i></span>
+                </div>
+            </section>
+            <section class="servicios" id="servicios">
+                <h1>Mi servicios</h1>
+                <div class="gridcontainerservicios">
+                    <div class="card__servicio">
+                        <i class="bi bi-brush"></i>
+                        <h3>Diseño Web</h3>
+                        <p>Diseño a la medida del cliente empleando construccion de wireframes para poder ayudar al cliente en el diseño de su sitio web</p>   
+                    </div>
+                    <div class="card__servicio">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>Desarrollo Web</h3>
+                        <p>Desarrollo de paginas web empleando buenas practicas y las ultimas tecnologias para solucionar el problema que presenta el cliente</p>
+                    </div>
+                    <div class="card__servicio">
+                        <i class="bi bi-phone"></i>
+                        <h3>Diseño Responsivo</h3>
+                        <p>Diseño 100% responsivo para todos los dispositivos para una mejor presentacion a nivel estetico</p>
+                    </div>
+                    <div class="card__servicio">
+                        <i class="bi bi-universal-access"></i>
+                        <h3>Personalizacion</h3>
+                        <p>Ofrezco a los clientes proyectos personalizados exclusivamente para su negocio</p>
+                    </div>
+                </div>
+            </section>
+            <section class="portafolio" id="portafolio">
+                <h1>Mis Proyectos</h1>
+                <div class="gridcontainerportafolio">
+                    <div class="portafolio__trabajos">
+                        <img src="../img/portafolio.png" alt="proyecto 1">
+                        <div class="hoverimg">
+                            <p>Portafolio web hecho con tecnologías:<br> HTML, CSS.</p>
+                            <a href="https://portafolio-alexis-salomon.netlify.app/" target="_blank"><i class="bi bi-globe"></i><p>Website</p></a>
+                        </div>
+                    </div>
+                    <div class="portafolio__trabajos">
+                        <img src="../img/portafolio2.jpg" alt=" proyecto 2">
+                        <div class="hoverimg">
+                            <p>Estoy trabajando en más proyectos &#128512;</p>
+                        </div>
+                    </div>
+                    <div class="portafolio__trabajos">
+                        <img src="../img/portafolio3.jpg" alt="proyecto 3">
+                        <div class="hoverimg">
+                            <p>Estoy trabajando en más proyectos &#128512;</p>
+                        </div>
+                    </div>
+                    <div class="portafolio__trabajos">
+                        <img src="../img/portafolio1.jpg" alt="proyecto 1">
+                        <div class="hoverimg">
+                            <p>Estoy trabajando en más proyectos &#128512;</p>
+                        </div>
+                    </div>
+                    <div class="portafolio__trabajos">
+                        <img src="../img/portafolio2.jpg" alt=" proyecto 2">
+                        <div class="hoverimg">
+                            <p>Estoy trabajando en más proyectos &#128512;</p>
+                        </div>
+                    </div>
+                    <div class="portafolio__trabajos">
+                        <img src="../img/portafolio3.jpg" alt="proyecto 3">
+                        <div class="hoverimg">
+                            <p>Estoy trabajando en más proyectos &#128512;</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="estudios" id="estudios">
+                <h1>Estudios</h1>
+                <div class="timeline">
+                    <div class="container-study left">
+                      <div class="content">
+                        <h2>2017</h2>
+                        <p>Lorem ipsum..</p>
+                      </div>
+                    </div>
+                    <div class="container-study right">
+                      <div class="content">
+                        <h2>2016</h2>
+                        <p>Lorem ipsum..</p>
+                      </div>
+                    </div>
+                    <div class="container-study left">
+                        <div class="content">
+                          <h2>2017</h2>
+                          <p>Lorem ipsum..</p>
+                        </div>
+                      </div>
+                      <div class="container-study right">
+                        <div class="content">
+                          <h2>2016</h2>
+                          <p>Lorem ipsum..</p>
+                        </div>
+                      </div>
+                </div>
+            </section> -->
+            <section class="contacto" id="contacto">
+                <h1>Contactame</h1>
+                <div class="contacto__form">
+                    <form action="" class="form">
+                            <input type="text" name="nombre" id="nombre" placeholder="Introduce tu Nombre" required>
+                            <input type="text" name="asunto" id="asunto" placeholder="Introduce el Asunto" required>
+                            <input type="email" name="email" id="email" placeholder="Introduce tu correo" required>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Introduce tu mensaje" required></textarea>
+                            <input type="submit" value="Enviar" id="enviar">
+                            <input type="reset" value="Cancelar" id="reset">
+                    </form>
+                </div>
+            </section>
+            <!-- <a href="#hero" id="button-up">
+                <i class="bi bi-caret-up"></i>
+            </a> -->
         </main>
         <footer class="footer">
             <div class="footer__container">
@@ -75,5 +270,7 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/slides.js"></script>
 </body>
 </html>
