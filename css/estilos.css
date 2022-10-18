@@ -216,18 +216,13 @@ footer {
     padding: 20px; }
     .sobremi .conocimiento__container__skills .container__skills {
       margin: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-items: flex-start;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 10px; }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      align-items: center;
+      justify-items: center; }
       .sobremi .conocimiento__container__skills .container__skills .skills {
-        display: grid;
-        grid-template-columns: 0.35fr 2fr;
-        width: 100%;
+        width: fit-content;
         align-items: center; }
         .sobremi .conocimiento__container__skills .container__skills .skills img {
           display: inline-block;
@@ -235,17 +230,6 @@ footer {
           height: 70px;
           margin: 0;
           padding: 0; }
-        .sobremi .conocimiento__container__skills .container__skills .skills .progress {
-          height: 1.7rem;
-          border-radius: 0.75rem; }
-          .sobremi .conocimiento__container__skills .container__skills .skills .progress .progress-bar {
-            background-color: #038bbb; }
-            .sobremi .conocimiento__container__skills .container__skills .skills .progress .progress-bar p {
-              text-align: end;
-              padding-right: 5px;
-              font-weight: 600; }
-          .sobremi .conocimiento__container__skills .container__skills .skills .progress .progress-bar-striped {
-            background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
   .sobremi .estudios__container {
     display: flex;
     align-items: flex-start;
