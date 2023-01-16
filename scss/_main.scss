@@ -258,54 +258,56 @@
         width: 100%;
         grid-gap: 10px;
         .portafolio__trabajos{
-            cursor: pointer;  
-            position: relative;
-            img{
+            font-family: "Roboto";
+            margin: 20px;
+            background-color: #272626;
+            border-radius: 5px;
+            overflow: hidden;
+            .img-container{
+                overflow: hidden;
+                height: 250px;
+                }
+            .img-container img{
                 width: 100%;
                 height: 100%;
+                transition: all 0.5s;
             }
-            .hoverimg{
-                @include flex-row-column;
+            .info-container{
+                display: flex;
+                flex-direction: column;
                 text-align: center;
-                position: absolute;
-                bottom: 0;
-                top: 50%;
-                left: 50%;
-                background: rgba(0, 0, 0, 0.747);
-                color:white;
-                width: 100%;
-                height: 0;
-                transition: .5s ease;
-                overflow: hidden;
-                transform: translate(-50%, -50%);
-                i{
-                    margin-right: 5px;
-                }
+                justify-content: center;
+                p{
+                    padding: 5px 15px;
+                    width: 100%;
+                    color: rgb(255, 255, 255);
+                    font-weight: 600;
+                  }
+            }
+            .links-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
                 a{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background: gray;
-                    color: white;
-                    text-decoration: none;
-                    border-radius: 50px;
-                    border: $borde-fino;
-                    margin: 10px;
+                    border-radius: 5px;
+                    border: 1px solid #000;
+                    background: #8d8d8d;
+                    color: #000;
+                    margin: 5px;
                     padding: 5px;
-                    font-size: 0.75em;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: row;
+                    transition: .3s;
                 }
                 a:hover{
-                    color: #000000;
-                    background: rgb(87, 87, 87);
+                    background: #5a5a5a;
+                    color: #fff;
                 }
             }
-        }
+        }    
     }
-    .portafolio__trabajos:hover .hoverimg{
-        height: 100%;
-        cursor: pointer;
-        }
-    
 }
 
 
@@ -371,7 +373,7 @@
             font-family: 'Montserrat';
         }
         input[type=submit]:hover,input[type=reset]:hover{
-            background-color: #3a9cff;
+            background-color: #227dd8;
         }
         textarea{
             display: block;

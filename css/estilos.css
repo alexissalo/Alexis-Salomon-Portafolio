@@ -287,48 +287,47 @@ footer {
     width: 100%;
     grid-gap: 10px; }
     .portafolio .gridcontainerportafolio .portafolio__trabajos {
-      cursor: pointer;
-      position: relative; }
-      .portafolio .gridcontainerportafolio .portafolio__trabajos img {
+      font-family: "Roboto";
+      margin: 20px;
+      background-color: #272626;
+      border-radius: 5px;
+      overflow: hidden; }
+      .portafolio .gridcontainerportafolio .portafolio__trabajos .img-container {
+        overflow: hidden;
+        height: 250px; }
+      .portafolio .gridcontainerportafolio .portafolio__trabajos .img-container img {
         width: 100%;
-        height: 100%; }
-      .portafolio .gridcontainerportafolio .portafolio__trabajos .hoverimg {
+        height: 100%;
+        transition: all 0.5s; }
+      .portafolio .gridcontainerportafolio .portafolio__trabajos .info-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        position: absolute;
-        bottom: 0;
-        top: 50%;
-        left: 50%;
-        background: rgba(0, 0, 0, 0.747);
-        color: white;
-        width: 100%;
-        height: 0;
-        transition: .5s ease;
-        overflow: hidden;
-        transform: translate(-50%, -50%); }
-        .portafolio .gridcontainerportafolio .portafolio__trabajos .hoverimg i {
-          margin-right: 5px; }
-        .portafolio .gridcontainerportafolio .portafolio__trabajos .hoverimg a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: gray;
+        justify-content: center; }
+        .portafolio .gridcontainerportafolio .portafolio__trabajos .info-container p {
+          padding: 5px 15px;
+          width: 100%;
           color: white;
-          text-decoration: none;
-          border-radius: 50px;
-          border: #000 1px solid;
-          margin: 10px;
+          font-weight: 600; }
+      .portafolio .gridcontainerportafolio .portafolio__trabajos .links-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .portafolio .gridcontainerportafolio .portafolio__trabajos .links-container a {
+          border-radius: 5px;
+          border: 1px solid #000;
+          background: #8d8d8d;
+          color: #000;
+          margin: 5px;
           padding: 5px;
-          font-size: 0.75em; }
-        .portafolio .gridcontainerportafolio .portafolio__trabajos .hoverimg a:hover {
-          color: #000000;
-          background: #575757; }
-  .portafolio .portafolio__trabajos:hover .hoverimg {
-    height: 100%;
-    cursor: pointer; }
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          transition: .3s; }
+        .portafolio .gridcontainerportafolio .portafolio__trabajos .links-container a:hover {
+          background: #5a5a5a;
+          color: #fff; }
 
 /* seccion de contacto */
 .contacto {
@@ -382,7 +381,7 @@ footer {
       color: black;
       font-family: 'Montserrat'; }
     .contacto .contacto__form input[type=submit]:hover, .contacto .contacto__form input[type=reset]:hover {
-      background-color: #3a9cff; }
+      background-color: #227dd8; }
     .contacto .contacto__form textarea {
       display: block;
       margin: 10px auto;
@@ -456,7 +455,7 @@ footer {
     text-align: center;
     align-items: center; }
   .sobremi .conocimiento__container__skills .container__skills {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr 1fr; }
   .contacto h1 {
     font-size: 3.0em; }
   .contacto .contacto__form {
@@ -485,7 +484,7 @@ footer {
     text-align: center;
     align-items: center; }
   .sobremi .conocimiento__container__skills .container__skills {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr 1fr; }
   .contacto h1 {
     font-size: 4.0em; }
   .contacto .contacto__form {
